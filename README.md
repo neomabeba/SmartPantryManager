@@ -1,6 +1,6 @@
 # Smart Pantry Manager 🥗📱
 
-A modern Java Android application for tracking household ingredients, reducing food waste, and discovering cookable recipes based on available pantry items.
+A modern Java Android application for tracking household ingredients, reducing food waste, and suggesting recipes based strictly on available pantry items.
 
 ---
 
@@ -15,16 +15,14 @@ A modern Java Android application for tracking household ingredients, reducing f
 - **DatePicker Integration**: Built-in calendar picker (`DatePickerDialog`) for expiry dates.
 - **Search & Filters**: Instant search by ingredient name with filter chips (`All`, `Expiring Soon`, `Expired`, `Fresh`).
 
-### 🍳 Recipe Matching & Cooking
-- **Strict & Partial Matching**:
-  - **Ready to Cook (100%)**: Only suggests recipes where all ingredients are available in required quantities.
-  - **Partial Matches**: Displays recipes missing 1–2 items with missing quantity callouts.
+### 🍳 Strict Recipe Matching & Cooking
+- **Strict Recipe Suggestion**: Only suggests recipes when **100% of required ingredients** exist in the pantry in required quantities.
 - **Unit Conversion Engine**: Converts units across mass (`g` ↔ `kg`), volume (`ml` ↔ `l`, `tbsp`, `tsp`, `cups`), and counts (`pieces`, `slices`, `cloves`).
 - **Pluralization Handling**: Normalizes singular/plural names (e.g., `egg` ↔ `eggs`, `avocado` ↔ `avocados`).
-- **Interactive Recipe Cooking**: Deducts required ingredient quantities directly from the pantry storage when cooking a recipe.
+- **Interactive Recipe Cooking**: Deducts required ingredient quantities directly from local SQLite pantry storage when cooking a recipe.
 
 ### 🎨 Modern Material UI & Navigation
-- **Bottom Navigation**: 4-tab bottom navigation bar (`Home`, `Pantry`, `Recipes`, `Settings`).
+- **Bottom Navigation**: Material `BottomNavigationView` providing access to `Home`, `Pantry`, `Recipes`, and `Settings` screens.
 - **Dashboard Overview**: Stat summary cards, quick action buttons, and expiring item alerts.
 - **Material 3 Design**: Card layouts, custom vector icons, inline form validation (`TextInputLayout`), and friendly empty state screens.
 
@@ -43,7 +41,7 @@ A modern Java Android application for tracking household ingredients, reducing f
 ## 🚀 How to Run
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/smart-pantry-manager.git
+   git clone https://github.com/neomabeba/SmartPantryManager.git
    ```
 2. Open the project in **Android Studio**.
 3. Allow Gradle to sync dependencies.

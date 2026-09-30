@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Brand / Primary Colors -->
+    <color name="primary">#10B981</color>
+    <color name="primary_dark">#059669</color>
+    <color name="primary_light">#D1FAE5</color>
+
+    <color name="green">#10B981</color>
+    <color name="green_dark">#059669</color>
+
+    <!-- Neutral Colors -->
+    <color name="bg_app">#F8FAFC</color>
+    <color name="cream">#F8FAFC</color>
+    <color name="card_bg">#FFFFFF</color>
+    <color name="white">#FFFFFF</color>
+
+    <!-- Text Colors -->
+    <color name="text_dark">#0F172A</color>
+    <color name="text_secondary">#475569</color>
+    <color name="muted">#64748B</color>
+
+    <!-- Borders & Dividers -->
+    <color name="border">#E2E8F0</color>
+
+    <!-- Status Colors -->
+    <color name="red">#EF4444</color>
+    <color name="expired_bg">#FEE2E2</color>
+    <color name="expired_text">#991B1B</color>
+
+    <color name="amber">#F59E0B</color>
+    <color name="warning_bg">#FEF3C7</color>
+    <color name="warning_text">#92400E</color>
+
+    <color name="fresh_bg">#D1FAE5</color>
+    <color name="fresh_text">#065F46</color>
+
+    <!-- Navigation -->
+    <color name="nav_item_selected">#10B981</color>
+    <color name="nav_item_unselected">#94A3B8</color>
+</resources>

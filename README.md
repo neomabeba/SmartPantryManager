@@ -52,21 +52,17 @@ A modern Java Android application for tracking household ingredients, reducing f
 
 ---
 
-## 📝 12-Commit Sequence History
+## 📝 10-Commit Sequence History
 
-This project was built iteratively following an incremental git development progression:
-
-| Commit # | Commit Message | Description |
-| :--- | :--- | :--- |
-| **01** | `initial: scaffold Android project structure and Gradle build configuration` | Initialized base Android application module, namespace `com.example.smartpantry`, and dependencies. |
-| **02** | `feat(db): implement SQLiteDatabase helper and initial schema` | Created `DatabaseHelper.java` for `pantry`, `recipes`, and `recipe_ingredients` tables. |
-| **03** | `feat(model): add Pantry Ingredient and Recipe data models` | Created `Ingredient.java`, `Recipe.java`, and `RecipeIngredient.java` data structures. |
-| **04** | `feat(pantry): add pantry item list view, item cards, and adapter` | Created `item_pantry.xml`, `PantryAdapter.java`, and layout views. |
-| **05** | `feat(pantry): implement full pantry CRUD operations and database integration` | Wired insert, update, query, and delete operations in `PantryActivity` and `AddEditIngredientActivity`. |
-| **06** | `feat(recipe): seed initial recipe database and create recipe adapter` | Added 18 seed recipes with step-by-step cooking instructions and created `RecipeAdapter.java`. |
-| **07** | `feat(matching): implement UnitConverter and strict/partial recipe matching engine` | Added unit conversion logic (`g`↔`kg`, `ml`↔`l`↔`cups`) and singular/plural name normalization. |
-| **08** | `feat(recipe): implement RecipeDetailActivity and cook ingredient deduction` | Displayed required ingredients checklist and implemented pantry ingredient deduction on cook action. |
-| **09** | `feat(ui): implement DateUtils, expiry badges, and DatePickerDialog` | Calculated days remaining and added color-coded expiry status badges (🔴 Expired, 🟡 Warning, 🟢 Fresh). |
-| **10** | `feat(ui): add search input bar and status filter chips for pantry and recipes` | Added dynamic text filtering and category filter chips (`All`, `Expiring Soon`, `Expired`, `Fresh`). |
-| **11** | `feat(navigation): introduce BottomNavigationView and Home Dashboard screen` | Added 4-tab bottom navigation (`Home`, `Pantry`, `Recipes`, `Settings`) and dashboard summary cards. |
-| **12** | `test(unit): add JUnit test suite for UnitConverter, DateUtils, and data models` | Added 6 unit tests in `SmartPantryUnitTest.java` verifying logic, conversions, and models. |
+| # | Commit Message |
+| :---: | :--- |
+| **1** | `Initial Smart Pantry Manager Android project` |
+| **2** | `Added SQLite database and recipe seed data` |
+| **3** | `Implemented pantry ingredient CRUD` |
+| **4** | `Added strict recipe matching` |
+| **5** | `Added recipe detail screen` |
+| **6** | `Added settings and preferences` |
+| **7** | `Redesigned Home dashboard` |
+| **8** | `Redesigned Pantry management` |
+| **9** | `Improved validation and empty states` |
+| **10** | `Final UI, navigation and application polish` |
